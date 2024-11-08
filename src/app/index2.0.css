@@ -26,4 +26,5 @@
       width: 220px;
     }
   }
-  body{background: black;}
+  body,html{background: black;
+  overflow-x: hidden;}
