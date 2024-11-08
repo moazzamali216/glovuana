@@ -57,18 +57,7 @@ export default function Hero() {
                 start: "top center ",
             },
         });
-        gsap.to('.tag', {
-            x: 10,
-            opacity: 1,
-            yoyo: true,
-            stagger: 0.5,
-            scrollTrigger: {
-                start: "top",
-                end: "center",
-                trigger: ".box2",
-                toggleActions: "play reverse play reverse",
-            },
-        });
+  
         if (window.innerWidth > 1024) {
             gsap.to('.s-1', {
                 x: 220,
@@ -118,6 +107,29 @@ export default function Hero() {
                 ease: 'linear',
             });
         }
+        gsap.from('.tag-e', {
+            opacity: 0,
+            x: 400,
+            duration:2.25,
+            scrollTrigger: {
+                scrub:true,
+                // pin:true,
+                trigger: ".tag-cont",
+                start: "top top ",
+                end:'center top',
+            },
+        });
+        gsap.from('.tag-o', {
+            opacity: 0,
+            x: -200,
+            duration:2.25,
+            scrollTrigger: {
+                scrub:true,
+                trigger: ".tag-cont",
+                start: "top top ",
+                end:'center top',
+            },
+        });
     }, [])
 
     return (
@@ -129,7 +141,7 @@ export default function Hero() {
                     backgroundPosition: 'center',
                 }}
             >
-                <div className="container sm:flex-row flex-col flex sm:h-screen  w-[100%]">
+                <div className="container tag-cont sm:flex-row flex-col flex sm:h-screen  w-[100%]">
                     <div className=" w-full sm:w-1/2 relative flex items-start pt-[200px] sm:pt-0 sm:items-center h-screen">
                         <div className="absolute top-[68%] sm:top-[55%] right-[0%] ">
                             <div className="relative xl:block block sm:hidden ">
@@ -166,9 +178,43 @@ export default function Hero() {
                             <p className="text-gray-300 jost border-r-4 border-[red] w-[fit-content] title overflow-hidden font-semibold text-base text-shadow:0px_0px_7.2px_#00000030 mt-4">No Credit Card Required</p>
                         </div>
                     </div>
-                    <div className=" w-full border border-[red] sm:w-1/2 flex box-2 relative justify-end items-center h-screen ">
-                        <h1 className="text-[#f9f8f8] absolute top-[25%] left-[-20px] lg:left-[-50px] xl:left-5 text-center hero-btn-1 font-semibold md:block hidden text-3xl jost">Sign Up <br /> Now!</h1>
-                        <img className="absolute shadow-2xl sm:translate-x-[-50%] md:translate-x-0 md:translate-y-0 sm:translate-y-[-50%] sm:left-[50%] md:left-[-10px] top-0 sm:top-[50%] xl:block block md:hidden md:top-[40%] z-[10] laptop w-full sm:w-auto sm:h-[400px] md:max-h-[350px]" src="/assets/mobile.png" />
+                    <div className=" w-full   sm:w-1/2 sm:mt-0 mt- flex sm:flex-row flex-col box-2 relative justify-end items-center h-auto sm:h-screen ">
+                        <h1 className="text-[#f9f8f8] sm:absolute top-[25%] left-[-20px] lg:left-[-50px] xl:left-5 text-center hero-btn-1 font-semibold md:block block sm:hidden text-3xl jost">Sign Up <br className="sm:block hidden" /> Now!</h1>
+                        <div className="tag-e  tag sm:hidden absolute z-[10] right-0 top-[15%] bg-white w-[320px] flex gap-4">
+                            <div className="">
+                                <img className="w-14" src="/assets/avatar-2.png" alt="" />
+                            </div>
+                            <div>
+                                <h1 className="jost text-base font-semibold">
+                                    Lorem, ipsum.
+                                </h1>
+                                <p className="text-xs poppins">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, excepturi.</p>
+                            </div>
+                        </div>
+                        <div className="tag-o  tag sm:hidden absolute z-[10] left-0 top-[37%] bg-white w-[320px] flex gap-4">
+                            <div className="">
+                                <img className="w-14" src="/assets/avatar-2.png" alt="" />
+                            </div>
+                            <div>
+                                <h1 className="jost text-base font-semibold">
+                                    Lorem, ipsum.
+                                </h1>
+                                <p className="text-xs poppins">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, excepturi.</p>
+                            </div>
+                        </div>
+                        <div className="tag-e  tag sm:hidden absolute z-[10] right-0 top-[60%] bg-white w-[320px] flex gap-4">
+                            <div className="">
+                                <img className="w-14" src="/assets/avatar-2.png" alt="" />
+                            </div>
+                            <div>
+                                <h1 className="jost text-base font-semibold">
+                                    Lorem, ipsum.
+                                </h1>
+                                <p className="text-xs poppins">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, excepturi.</p>
+                            </div>
+                        </div>
+                        <img className="sm:absolute mt-10 sm:mt-0  sm:translate-x-[-50%] md:translate-x-0 md:translate-y-0 h-[600px] sm:translate-y-[-50%] sm:left-[50%] md:left-[-10px] top-0 sm:top-[50%] xl:block block md:hidden md:top-[40%] sm:z-[10] laptop w-fit sm:w-auto sm:h-[400px] md:max-h-[350px]" src="/assets/mobile.png" />
+                <h1 className="mt-10 mb-10 sm:hidden block text-white hero-btn-1 text-shadow:0px_0px_7.2px_#00000030 text-3xl lg:text-4xl xl:text-5xl leading-[40px] lg:leading-[50px] xl:leading-[60px] font-semibold jost text-center">GROW YOU BUSINESS<br /> WITH US</h1>
                         <div className="shadow-2xl md:block hidden rounded-full relative lg:min-w-[400px] w-[300px] h-[300px] lg:min-h-[400px]">
                             <img src="/assets/roundcircle.png" className="absolute w-full h-full animate-spin" alt="" />
                             <img className="w-[75px] lg:w-[125px] left-[32%] s-1 lg:left-[25%] absolute" src="/assets/store.png" alt="" />
