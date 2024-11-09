@@ -17,7 +17,7 @@ export const HoriztonalSection = () => {
                 end: 'bottom top',           // End when the bottom of the section hits the top of the viewport
                 scrub: 1,                    // Smoothly scrub the animation (feel free to adjust the value)
                 pin: true,                   // Pin the section in place while scrolling
-                markers: true,              // Disable markers (for debugging purposes)
+                 // Disable markers (for debugging purposes)
             },
         });
     }, []);
