@@ -107,29 +107,6 @@ export default function Hero() {
                 ease: 'linear',
             });
         }
-        gsap.from('.tag-e', {
-            opacity: 0,
-            x: 400,
-            duration:2.25,
-            scrollTrigger: {
-                scrub:true,
-                // pin:true,
-                trigger: ".tag-cont",
-                start: "top top ",
-                end:'center top',
-            },
-        });
-        gsap.from('.tag-o', {
-            opacity: 0,
-            x: -200,
-            duration:2.25,
-            scrollTrigger: {
-                scrub:true,
-                trigger: ".tag-cont",
-                start: "top top ",
-                end:'center top',
-            },
-        });
     }, [])
 
     return (
@@ -142,15 +119,15 @@ export default function Hero() {
                 }}
             >
                 <div className="container tag-cont sm:flex-row flex-col flex sm:h-screen  w-[100%]">
-                    <div className=" w-full sm:w-1/2 relative flex items-start pt-[200px] sm:pt-0 sm:items-center h-screen">
-                        <div className="absolute top-[68%] sm:top-[55%] right-[0%] ">
+                    <div className=" w-full sm:w-1/2 relative flex items-start pt-[200px] sm:pt-0 sm:items-center h-[570px] sm:h-screen">
+                        {/* <div className="absolute top-[68%] sm:top-[55%] right-[0%] ">
                             <div className="relative xl:block block sm:hidden ">
                                 <img className="animate-spin w-[200px]" src={'/assets/roundcircle.png'} />
                                 <i className="fa-solid absolute top-0 left-[50%] translate-x-[-50%] text-gray-200 border-2 border-[white] px-[12px] py-2 rounded-full fa-dollar-sign"></i>
                                 <i className="fa-brands fa-sellsy absolute top-[60%] left-[18%] translate-x-[-50%] text-gray-200 border-2 border-[white] px-[7px] py-2 rounded-full"></i>
                                 <i className="fa-solid fa-user-tie absolute top-[60%] right-[8%] text-gray-200 border-2 border-[white] px-[10px] py-2 rounded-full"></i>
                             </div>
-                        </div>
+                        </div> */}
                         <div>
                             <h1 className="text-white hero-btn-1 text-shadow:0px_0px_7.2px_#00000030 text-3xl lg:text-4xl xl:text-5xl leading-[40px] lg:leading-[50px] xl:leading-[60px] font-semibold jost">
                                 WORLD BEST ONLINE <br /> SELLING PLATFORM
@@ -178,9 +155,9 @@ export default function Hero() {
                             <p className="text-gray-300 jost border-r-4 border-[red] w-[fit-content] title overflow-hidden font-semibold text-base text-shadow:0px_0px_7.2px_#00000030 mt-4">No Credit Card Required</p>
                         </div>
                     </div>
-                    <div className=" w-full   sm:w-1/2 sm:mt-0 mt- flex sm:flex-row flex-col box-2 relative justify-end items-center h-auto sm:h-screen ">
+                    <div className=" w-full pb-10  sm:w-1/2 sm:mt-0 mt- flex sm:flex-row flex-col box-2 relative justify-end items-center h-auto sm:h-screen ">
                         <h1 className="text-[#f9f8f8] sm:absolute top-[25%] left-[-20px] lg:left-[-50px] xl:left-5 text-center hero-btn-1 font-semibold md:block block sm:hidden text-3xl jost">Sign Up <br className="sm:block hidden" /> Now!</h1>
-                        <div className="tag-e  tag sm:hidden absolute z-[10] right-0 top-[15%] bg-white w-[320px] flex gap-4">
+                          {/* <div className="tag-e  tag sm:hidden absolute z-[10] right-0 top-[15%] bg-white w-[320px] flex gap-4">
                             <div className="">
                                 <img className="w-14" src="/assets/avatar-2.png" alt="" />
                             </div>
@@ -212,10 +189,10 @@ export default function Hero() {
                                 </h1>
                                 <p className="text-xs poppins">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, excepturi.</p>
                             </div>
-                        </div>
-                        <img className="sm:absolute mt-10 sm:mt-0  sm:translate-x-[-50%] md:translate-x-0 md:translate-y-0 h-[600px] sm:translate-y-[-50%] sm:left-[50%] md:left-[-10px] top-0 sm:top-[50%] xl:block block md:hidden md:top-[40%] sm:z-[10] laptop w-fit sm:w-auto sm:h-[400px] md:max-h-[350px]" src="/assets/mobile.png" />
-                <h1 className="mt-10 mb-10 sm:hidden block text-white hero-btn-1 text-shadow:0px_0px_7.2px_#00000030 text-3xl lg:text-4xl xl:text-5xl leading-[40px] lg:leading-[50px] xl:leading-[60px] font-semibold jost text-center">GROW YOU BUSINESS<br /> WITH US</h1>
-                        <div className="shadow-2xl md:block hidden rounded-full relative lg:min-w-[400px] w-[300px] h-[300px] lg:min-h-[400px]">
+                        </div> */}
+                        {/* <img className="sm:absolute mt-10 sm:mt-0  sm:translate-x-[-50%] md:translate-x-0 md:translate-y-0 h-[600px] sm:translate-y-[-50%] sm:left-[50%] md:left-[-10px] top-0 sm:top-[50%] xl:block block md:hidden md:top-[40%] sm:z-[10] laptop w-fit sm:w-auto sm:h-[400px] md:max-h-[350px]" src="/assets/mobile.png" />
+                <h1 className="mt-10 mb-10 sm:hidden block text-white hero-btn-1 text-shadow:0px_0px_7.2px_#00000030 text-3xl lg:text-4xl xl:text-5xl leading-[40px] lg:leading-[50px] xl:leading-[60px] font-semibold jost text-center">GROW YOU BUSINESS<br /> WITH US</h1> */}
+                        <div className="shadow-2xl md:block block rounded-full mt-10 sm:mt-0 relative lg:min-w-[400px] w-[300px] h-[300px] lg:min-h-[400px]">
                             <img src="/assets/roundcircle.png" className="absolute w-full h-full animate-spin" alt="" />
                             <img className="w-[75px] lg:w-[125px] left-[32%] s-1 lg:left-[25%] absolute" src="/assets/store.png" alt="" />
                             <img className="w-[75px] lg:w-[125px] bottom-[15%] s-2 absolute" src="/assets/atm.png" alt="" />
