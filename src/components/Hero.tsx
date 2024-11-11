@@ -156,7 +156,7 @@ export default function Hero() {
                         </div>
                     </div>
                     <div className=" w-full pb-10  sm:w-1/2 sm:mt-0 mt- flex sm:flex-row flex-col box-2 relative justify-end items-center h-auto sm:h-screen ">
-                        <h1 className="text-[#f9f8f8] sm:absolute top-[25%] left-[-20px] lg:left-[-50px] xl:left-5 text-center hero-btn-1 font-semibold md:block block sm:hidden text-3xl jost">Sign Up <br className="sm:block hidden" /> Now!</h1>
+                        {/* <h1 className="text-[#f9f8f8] sm:absolute top-[25%] left-[-20px] lg:left-[-50px] xl:left-5 text-center hero-btn-1 font-semibold md:block block sm:hidden text-3xl jost">Sign Up <br className="sm:block hidden" /> Now!</h1> */}
                           {/* <div className="tag-e  tag sm:hidden absolute z-[10] right-0 top-[15%] bg-white w-[320px] flex gap-4">
                             <div className="">
                                 <img className="w-14" src="/assets/avatar-2.png" alt="" />
@@ -199,7 +199,7 @@ export default function Hero() {
                             <img className="w-[65px] lg:w-[100px] bottom-[12%] s-3 right-0 absolute" src="/assets/trolly.png" alt="" />
                         </div> */}
                         <div>
-                         <img className=" md:block block rounded-full mt-10 sm:mt-0 relative lg:min-w-[450px] w-[300px] h-[300px] lg:min-h-[450px]" src="/assets/gifimafe.gif"   />
+                         <img className=" md:block block rounded-full mt-10 sm:mt-0 relative lg:min-w-[500px] w-[300px] h-[300px] lg:min-h-[500px]" src="/assets/gifimafe.gif"   />
                         </div>
                     </div>
                 </div>
