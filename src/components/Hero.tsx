@@ -199,7 +199,7 @@ export default function Hero() {
                             <img className="w-[65px] lg:w-[100px] bottom-[12%] s-3 right-0 absolute" src="/assets/trolly.png" alt="" />
                         </div> */}
                         <div>
-                         <img src="/assets/gifimage.gif"   />
+                         <img className=" md:block block rounded-full mt-10 sm:mt-0 relative lg:min-w-[450px] w-[300px] h-[300px] lg:min-h-[450px]" src="/assets/gifimafe.gif"   />
                         </div>
                     </div>
                 </div>
