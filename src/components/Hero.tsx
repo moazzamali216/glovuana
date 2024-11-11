@@ -192,11 +192,14 @@ export default function Hero() {
                         </div> */}
                         {/* <img className="sm:absolute mt-10 sm:mt-0  sm:translate-x-[-50%] md:translate-x-0 md:translate-y-0 h-[600px] sm:translate-y-[-50%] sm:left-[50%] md:left-[-10px] top-0 sm:top-[50%] xl:block block md:hidden md:top-[40%] sm:z-[10] laptop w-fit sm:w-auto sm:h-[400px] md:max-h-[350px]" src="/assets/mobile.png" />
                 <h1 className="mt-10 mb-10 sm:hidden block text-white hero-btn-1 text-shadow:0px_0px_7.2px_#00000030 text-3xl lg:text-4xl xl:text-5xl leading-[40px] lg:leading-[50px] xl:leading-[60px] font-semibold jost text-center">GROW YOU BUSINESS<br /> WITH US</h1> */}
-                        <div className="shadow-2xl md:block block rounded-full mt-10 sm:mt-0 relative lg:min-w-[400px] w-[300px] h-[300px] lg:min-h-[400px]">
+                        {/* <div className="shadow-2xl md:block block rounded-full mt-10 sm:mt-0 relative lg:min-w-[400px] w-[300px] h-[300px] lg:min-h-[400px]">
                             <img src="/assets/roundcircle.png" className="absolute w-full h-full animate-spin" alt="" />
                             <img className="w-[75px] lg:w-[125px] left-[32%] s-1 lg:left-[25%] absolute" src="/assets/store.png" alt="" />
                             <img className="w-[75px] lg:w-[125px] bottom-[15%] s-2 absolute" src="/assets/atm.png" alt="" />
                             <img className="w-[65px] lg:w-[100px] bottom-[12%] s-3 right-0 absolute" src="/assets/trolly.png" alt="" />
+                        </div> */}
+                        <div>
+                         <img src="/assets/gifimage.gif"   />
                         </div>
                     </div>
                 </div>

@@ -8,6 +8,9 @@ import Nav from '@/components/Nav';
 import { Discount } from "@/components/Discount";
 import  WhatsAppButton  from "@/components/wabutton";
 import MultiStepForm from "@/components/MultStepForm";
+import  {WishList}  from "@/components/WIshList";
+import { Footer } from "@/components/Footer";
+
 export default function Home() {
   return (
     <>
@@ -16,9 +19,11 @@ export default function Home() {
     <WhatsAppButton phoneNumber={+923224066958}/>
     <Video/>
     <Discount/>
+    <WishList/>
     <HoriztonalSection/>
     <OurServices/>
     <MultiStepForm/>
+    <Footer></Footer>
     </>
   );
 }
