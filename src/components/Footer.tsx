@@ -19,7 +19,7 @@ export function Footer() {
                                     +44(0)20 3723 6703</p>
                             </div>
                         </div>
-                        <div className="w-full bordersm:w-2/3 flex-col sm:gap-0 gap-5 sm:flex-row flex">
+                        <div className="w-full sm:pl-6 md:pl-12 lg:pl-20 xl:pl-24 bordersm:w-2/3 flex-col sm:gap-0 gap-5 sm:flex-row flex">
                             <div className=" h-full xl:text-start text-start w-full sm:w-1/3">
                                 <h1 className="poppins text-xl xl:text-2xl pb-10 font-semibold">Links</h1>
                                 <div className="flex flex-col">
