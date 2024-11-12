@@ -21,6 +21,18 @@ export const Discount = () => {
         // markers: true,        // Enable markers for debugging
       },
     });
+    gsap.from('.laptop', {
+      opacity: 0.5,
+      x: 400,
+      rotate:60,
+      duration: 1.25,
+      scrollTrigger: {
+        scrub:1,
+          trigger: ".tag-cont2",
+          start: 'top bottom',  // Animation starts when top of '.tag-cont' reaches center of viewport
+          end: 'top top',
+      },
+  });
 
     // // Animation for '.tag-o'
     gsap.from('.tag-o', {
@@ -91,9 +103,9 @@ export const Discount = () => {
           />
 </div>
           <img
-            src={'/assets/Discount.png'}
+            src={'/assets/laptop.png'}
             alt="30% Discount Graphic"
-            className=" xl:w-[auto] contain lg:w-[590px] md:w-[400px] w-[319px] xl:h-[514px] lg:h-[490px] md:h-[350px] object-contain h-[320px]  xl:me-12 max-md:object-cover sm:block hidden lg:object-contain lg:pt-12 xl:pt-0 xl:object-cover"
+            className=" xl:w-[590px] contain laptop lg:w-[590px] md:w-[400px] w-[319px] xl:h-[514px] lg:h-[auto] md:h-[350px] object-contain h-[320px]  xl:me-12 sm:block hidden lg:object-contain lg:pt-12 xl:pt-0 xl:object-contain"
           />
         </div>
       </div>

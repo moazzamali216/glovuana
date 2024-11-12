@@ -46,18 +46,7 @@ export default function Hero() {
             repeat: -1,
             yoyo: true,
         });
-        gsap.from('.laptop', {
-            opacity: 0.5,
-            y: 100,
-            duration: 1.25,
-            rotateY: 360,
-            skew: 100,
-            scrollTrigger: {
-                trigger: ".box1",
-                start: "top center ",
-            },
-        });
-  
+
         if (window.innerWidth > 1024) {
             gsap.to('.s-1', {
                 x: 220,
@@ -118,7 +107,7 @@ export default function Hero() {
                     backgroundPosition: 'center',
                 }}
             >
-                <div className="container tag-cont sm:flex-row flex-col flex sm:h-screen  w-[100%]">
+                <div className="container  tag-cont sm:flex-row flex-col flex sm:h-screen  w-[100%]">
                     <div className=" w-full sm:w-1/2 relative flex items-start pt-[200px] sm:pt-0 sm:items-center h-[570px] sm:h-screen">
                         {/* <div className="absolute top-[68%] sm:top-[55%] right-[0%] ">
                             <div className="relative xl:block block sm:hidden ">
