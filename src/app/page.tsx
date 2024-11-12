@@ -16,7 +16,7 @@ export default function Home() {
     <>
     <Nav/>
     <Hero/> 
-    <WhatsAppButton phoneNumber={+923224066958}/>
+    <WhatsAppButton phoneNumber={+923058553551}/>
     <Video/>
     <Discount/>
     <WishList/>
